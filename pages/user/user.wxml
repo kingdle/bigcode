@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="userinfo" wx:if="{{userInfo.btn_register=='T'}}">
+    <image class="userinfo-avatar" src="{{logged ? userInfo.avatarUrl : '../../images/logo.png'}}" background-size="cover"></image>
+    <view>
+      <text class="userinfo-nickname">{{userInfo.title}}</text>
+    </view>
+  </view>
+  <view class="weapp" wx:if="{{userInfo.btn_register=='T'}}">
+    <!-- <image class="userinfo-avatar" src="../../images/bigcode.jpg" bindtap="saveImgToPhotosAlbumTap"></image> -->
+
+    <view class="newsSlogan">
+    <text>{{userInfo.notice}}</text>
+    </view>
+  </view>
+  
+  <view class="uploader address" wx:if="{{userInfo.btn_register=='T'}}">
+    <view class="uploader-text" bindtap="makePhoneCall">
+      <image src="../../images/phone.png"></image>
+      <text>{{userInfo.newsTitle}}(微信)</text>
+    </view>
+  </view>
+
+  <view class="uploader phone">
+    <view class="uploader-text" bindtap="openAddress">
+      <image src="../../images/location.png"></image>
+      <text>{{userInfo.admission}}</text>
+    </view>
+  </view>
+</view>
+<view class="weapp" wx:if="{{userInfo.btn_register=='T'}}">
+    <image class="userinfo-code" src="{{userInfo.slide}}" bindtap="toPic2"></image>
+    <view class="code">{{userInfo.newsSlogan}}</view>
+  </view>
+<!-- <view class="bg">
+  <view>
+    <image src="../../images/garden.png"></image>
+  </view>
+</view> -->

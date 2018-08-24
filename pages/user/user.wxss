@@ -1,0 +1,179 @@
+/**index.wxss**/
+
+page {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.userinfo, .uploader, .tunnel {
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #f8f8f8;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.newsSlogan{
+  text-align: left;
+  padding: 30rpx;
+  font-size:18px;
+}
+.userinfo-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 0 0 30rpx;
+}
+.userinfo-code {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 30rpx 0 0 30rpx;
+}
+
+.userinfo-nickname {
+  font-size: 32rpx;
+  color: #222;
+}
+
+.uploader, .tunnel {
+  height: auto;
+  padding: 0 0 0 40rpx;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.uploader-text, .tunnel-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 22px;
+  color: #222;
+}
+
+.uploader-container {
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx 20rpx 20rpx 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.uploader-image {
+  width: 100%;
+  height: 360rpx;
+}
+
+.tunnel {
+  padding: 0 0 0 40rpx;
+}
+
+.tunnel-text {
+  position: relative;
+  color: #222;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top: 1px solid #f8f8f8;
+}
+
+.tunnel-text:first-child {
+  border-top: none;
+}
+
+.tunnel-switch {
+  position: absolute;
+  right: 20rpx;
+  top: -2rpx;
+}
+
+.disable {
+  color: #888;
+}
+
+.service {
+  position: fixed;
+  right: 40rpx;
+  bottom: 40rpx;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  background: linear-gradient(#007aff, #0063ce);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.service-button {
+  position: absolute;
+  top: 40rpx;
+}
+
+.service:active {
+  box-shadow: none;
+}
+
+.request-text {
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  word-break: break-all;
+}
+
+.address image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 5px;
+}
+
+.phone image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 5px;
+}
+
+.weapp image {
+  width: 320rpx;
+  height: 320rpx;
+}
+
+.weapp {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.code {
+  font-size: 14px;
+  color: #888;
+}
+
+.delete {
+  padding:5px 20px;
+}
+
+.bg {
+  bottom: 0;
+}
+
+.bg image {
+  height: 180px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.list{
+  text-align: left;
+  margin: 10px;
+}
